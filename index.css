@@ -799,6 +799,15 @@ header .toggle.active{
     color: #0d1b2a;
 }
 
+.projectNote
+{
+    color: #e0e1dd;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-top: 14px;
+}
+
 .databaseProject
 {
     align-items: stretch;
