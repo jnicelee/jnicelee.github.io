@@ -17,3 +17,5 @@ the bio, project cards, and links.
 - `styles.css`: visual design
 - `script.js`: current year and sticky header behavior
 - `assets/hero-workspace.png`: generated hero image
+- `sal.css` / `sal.js`: scroll reveal animation files pulled from
+  `beaverseven/Portfolio`
