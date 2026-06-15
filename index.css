@@ -813,6 +813,7 @@ header .toggle.active{
     align-items: stretch;
     flex-direction: column;
     gap: 32px;
+    padding-bottom: 140px;
 }
 
 .databaseProject .databaseIntro
@@ -950,6 +951,7 @@ header .toggle.active{
     .databaseProject
     {
         gap: 24px;
+        padding-bottom: 90px;
     }
 
     .databaseEmbedShell
