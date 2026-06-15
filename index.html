@@ -1,334 +1,229 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
-        <meta charset= "UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" type = "text/css" href = "sal.css">
-        <link rel = "stylesheet" type = "text/css" href = "index.css">
-        <title> Janice Lee Portfolio </title>
+        <meta name="description" content="Janice Lee portfolio: computer science, linguistics, AI policy, debate, and legal technology projects.">
+        <link rel="stylesheet" type="text/css" href="sal.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Janice Lee Portfolio</title>
     </head>
     <body>
-        <div class = "wrapper">
-
-
-            <!--header-->
+        <div class="wrapper">
             <header>
-                <a href = '#' class = "logo"> Janice Lee</a>
-                <div class = "toggle" onclick="toggleClassName();"></div>
+                <a href="#home" class="logo">Janice Lee</a>
+                <div class="toggle" onclick="toggleClassName();" aria-label="Toggle navigation"></div>
             </header>
 
-            <!--Sidebar-->
-
-            <div class = "sidebar">
+            <div class="sidebar">
                 <ul>
-                    <li> <a href= '#home' onclick="toggleClassName();"> Home</a></li>
-                    <li> <a href= '#about' onclick="toggleClassName();"> About</a></li>
-                    <li> <a href= '#services' onclick="toggleClassName();"> Skills</a></li>
-                    <li> <a href= '#client' onclick="toggleClassName();"> Project </a></li>
-                    <li> <a href= '#testimonial' onclick="toggleClassName();"> Social Media </a></li>
-                    <li> <a href= '#team' onclick="toggleClassName();"> Experience</a></li>
-                    <li> <a href= '#contact' onclick="toggleClassName();"> Contact</a></li>
-
+                    <li><a href="#home" onclick="toggleClassName();">Home</a></li>
+                    <li><a href="#about" onclick="toggleClassName();">About</a></li>
+                    <li><a href="#services" onclick="toggleClassName();">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleClassName();">Projects</a></li>
+                    <li><a href="#policy-skills" onclick="toggleClassName();">Policy Skills</a></li>
+                    <li><a href="#leadership" onclick="toggleClassName();">Leadership</a></li>
+                    <li><a href="#contact" onclick="toggleClassName();">Contact</a></li>
                 </ul>
             </div>
 
-            <!--Banner-->
-
-            <div class = "banner" id = "home">
-                <img src = "images/bg.jpg"> 
-                <div class = "content" data-sal="slide-left" data-sal-duration="500">
-                    <h2> Janice Lee's Portfolio</h2>
-                    <p> Welcome to my portfolio! Here you will find all the projects that I have created. I hope you will enjoy what you see!</p>
+            <div class="banner" id="home">
+                <img src="images/bg.jpg" alt="">
+                <div class="content" data-sal="slide-left" data-sal-duration="500">
+                    <h2>Janice Lee's Portfolio</h2>
+                    <p>Computer Science and Linguistics student focused on AI, law, public policy, and the systems that make complex information easier to search and analyze.</p>
                 </div>
             </div>
 
-            <!-- About-->
-
-            <section class = "about" id = "about">
-                <div class = "contentBox" data-sal="slide-right" data-sal-duration="500">
-                    <h2 class = "heading"> About Me</h2>
-                    <p class = "text"> Hello! My name is Janice Lee and I’m a Computer Science and Linguistics major entering my third year of undergrad at Boston University, focused on the intersection of AI, law, and public policy. My work combines technical skills in Python, SQL, React, and data organization with an interest in how legal systems respond to emerging technologies. I’m currently building projects such as an AI policy and litigation database, where I track cases, laws, enforcement actions, and compliance issues to make complex regulatory developments easier to search and analyze. As Vice President and varsity competitor for BUDS, the 4th-ranked APDA debate club in the nation, I’ve also developed strong research, argumentation, and communication skills. I’m preparing for AI policy and law-related internships where I can help translate technical AI issues into clear, useful legal and policy analysis.I’m a Computer Science and Linguistics major entering my third year of undergrad, focused on the intersection of AI, law, and public policy. My work combines technical skills in Python, SQL, React, and data organization with an interest in how legal systems respond to emerging technologies. I’m currently building projects such as an AI policy and litigation database, where I track cases, laws, enforcement actions, and compliance issues to make complex regulatory developments easier to search and analyze. As Vice President and varsity competitor for BUDS, the 4th-ranked APDA debate club in the nation, I’ve also developed strong research, argumentation, and communication skills. I’m preparing for AI policy and law-related internships where I can help translate technical AI issues into clear, useful legal and policy analysis.</p>
-                </div>
-
-                <div class = "imgBox" data-sal="slide-left" data-sal-duration="500">
-
-                    <img class = "img" src = "images/JaniceLee.jpg">
-
-                </div>
-            </section>
-
-            <!--services-->
-
-            <section class = "services" id = "services">
-                <h2 class = "heading" data-sal="slide-right" data-sal-duration="500"> Skills </h2>
-                <p class = "text" data-sal="slide-left" data-sal-duration="500"> Here is a list of my technical skills!</p>
-                <div class = "container"> 
-
-                    <div class = "serviceBox" data-sal="slide-left" data-sal-duration="500">
-                        <div> 
-                            <img src = "images/skill-python.jpg" alt = "Python logo">
-                            <h2> Python</h2>
-                        </div>
-                    </div>
-
-                    <div class = "serviceBox" data-sal="slide-left" data-sal-duration="500">
-                        <div> 
-                            <img src = "images/skill-sqlite.jpg" alt = "SQLite logo">
-                            <h2> SQLite</h2>
-                        </div>
-                    </div>
-
-                    <div class = "serviceBox" data-sal="slide-left" data-sal-duration="500">
-                        <div> 
-                            <img src = "images/skill-supabase.jpg" alt = "Supabase logo">
-                            <h2> Supabase</h2>
-                        </div>
-                    </div>
-
-                    <div class = "serviceBox" data-sal="slide-right" data-sal-duration="500">
-                        <div> 
-                            <img src = "images/skill-java.png" alt = "Java logo">
-                            <h2> Java</h2>
-                        </div>
-                    </div>
-
-                    <div class = "serviceBox" data-sal="slide-left" data-sal-duration="500">
-                        <div> 
-                            <img src = "images/skill-react.png" alt = "React logo">
-                            <h2> React</h2>
-                        </div>
-                    </div>
-
-                    <div class = "serviceBox" data-sal="slide-left" data-sal-duration="500">
-                        <div> 
-                            <img src = "images/skill-streamlit.png" alt = "Streamlit logo">
-                            <h2> Streamlit</h2>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-    
-            <!--Space Blaster-->
-            <section class="technology" id="client">
+            <section class="about" id="about">
                 <div class="contentBox" data-sal="slide-right" data-sal-duration="500">
-                    <h2 class="heading">Book Genre Prediction</h2>
-                    <p class="text">This notebook uses machine learning to predict book genres based on textual features. It covers data preprocessing, model training, and evaluation.</p>
-                    <!-- Embed notebook using Binder iframe -->
-                    <iframe src="https://mybinder.org/v2/gh/beaverseven/DataScienceProjects/main?filepath=Book%20Genre%20Prediction.ipynb" width="100%" height="500px"></iframe>
-                    <!-- Download link for the notebook -->
-                    <a href="https://github.com/beaverseven/DataScienceProjects/raw/main/Book%20Genre%20Prediction.ipynb" class="btn-download" download>Download Full Notebook</a>
-                </div>
-            </section>
-            
-            <section class = "technology">
-
-                <div class = "contentBox" data-sal="slide-right" data-sal-duration="500"> <!-- Divs are just used for organizing. Think of them as a box where you can put stuff in.-->
-                    <h2 class = "heading"> Cave Boy</h2>
-                    <p class = "text"> Cave Boy is a game created using C# and GameMaker Studio 2 platform. In this game, the player controls a "cave boy" that ventures through a perilous cave! This game implements platforming, ledge grabbing, a high-score system, various enemies, and a boss!</p>
-                    <a href="https://gx.games/games/kmxcy5/cave-boy/tracks/6e6758df-d410-476a-8d54-e19d183fb970">Visit the website here!</a> (You must use <a href = "https://www.opera.com/gx">OperaGx browser</a> to play it!)
-                </div>
-                <div class = "imgBox" data-sal="slide-left" data-sal-duration="500">
-                    <img src = "images/CaveBoy.gif">
+                    <h2 class="heading">About Me</h2>
+                    <p class="text">Hello! My name is Janice Lee and I'm a Computer Science and Linguistics major entering my third year of undergrad at Boston University, focused on the intersection of AI, law, and public policy. My work combines technical skills in Python, SQL, React, and data organization with an interest in how legal systems respond to emerging technologies. I'm currently building projects such as an AI policy and litigation database, where I track cases, laws, enforcement actions, and compliance issues to make complex regulatory developments easier to search and analyze. As Vice President and varsity competitor for BUDS, the 4th-ranked APDA debate club in the nation, I've also developed strong research, argumentation, and communication skills. I'm preparing for AI policy and law-related internships where I can help translate technical AI issues into clear, useful legal and policy analysis.</p>
                 </div>
 
-    
-    
-    
-            </section>
-
-            <!-- Note Finder Free-->
-            <section class = "technology">
-                <div class = "contentBox" data-sal="slide-right" data-sal-duration="500"> <!-- Divs are just used for organizing. Think of them as a box where you can put stuff in.-->
-                    <h2 class = "heading"> NoteFinderFree</h2>
-                    <p class = "text"> NoteFinderFree is a website that allows students to search up any notes on any subject from any school, given that previous students have uploaded their notes onto the site. Students can upload their notes using a PDF parser that will translate the notes ihto text for others to search up. This website was made using React.js, Javascript, HTML, and CSS.</p>
-                    <a href="https://beaverseven.github.io/shellhacks-notes-client/">Visit the website here!</a>
-                </div>
-                <div class = "imgBox" data-sal="slide-left" data-sal-duration="500">
-                    <img src = "images/NoteFinderFree.gif">
-                </div>
-
-    
-    
-    
-            </section>
-
-            <!-- Homeless -->
-            <section class = "technology">
-                <div class = "contentBox" data-sal="slide-right" data-sal-duration="500"> <!-- Divs are just used for organizing. Think of them as a box where you can put stuff in.-->
-                    <h2 class = "heading"> Covid-19 and Homeless People</h2>
-                    <p class = "text"> This website showcases the effect that COVID-19 had on the American Population. In this website, users can see three graphs that convey number of homeless men vs. women, job loss rates, and homeless people encountered in hospitals. This website was made to place a spotlight on a group of people that are otherwise shadowed in society. In an effort to bring more attention to the homeless population recovery movement, I have also added a map that showcases various places that have emerged to help homeless people as a result of this shadowing (made with python, HTML, and CSS).</p>
-                    <a href="https://beaverseven.github.io/HomelessAndCovid-19/">Visit the website here!</a>
-                </div>
-                <div class = "imgBox" data-sal="slide-left" data-sal-duration="500">
-                    <img src = "images/HomelessCovid19.gif">
-                </div>
-
-    
-    
-    
-            </section>
-
-            <section class = "technology">
-                <div class = "contentBox" data-sal="slide-right" data-sal-duration="500"> <!-- Divs are just used for organizing. Think of them as a box where you can put stuff in.-->
-                    <h2 class = "heading"> Battleship Discord Bot</h2>
-                    <p class = "text"> This is a bot created with Python, Discord API, and Discord.js that allows two people to play Battleship through Discord!</p>
-                    <a href="https://github.com/beaverseven/Battleship-Bot">Visit the website here!</a>
-                </div>
-                <div class = "imgBox" data-sal="slide-left" data-sal-duration="500">
-                    <img src = "images/Battleships.gif">
+                <div class="imgBox profilePanel" data-sal="slide-left" data-sal-duration="500">
+                    <div>
+                        <h3>Focus Areas</h3>
+                        <p>AI policy</p>
+                        <p>Legal technology</p>
+                        <p>Regulatory research</p>
+                        <p>Debate and advocacy</p>
+                    </div>
                 </div>
             </section>
 
-            <section class = "technology">
-                <div class = "contentBox" data-sal="slide-right" data-sal-duration="500"> <!-- Divs are just used for organizing. Think of them as a box where you can put stuff in.-->
-                    <h2 class = "heading"> Music Discord Bot</h2>
-                    <p class = "text"> This is a bot created with Python, Discord and Youtube API, and Discord.js that allows to play music in a Discord voice channel.</p>
-                    <a href="https://github.com/beaverseven/Battleship-Bot">Visit the project here!</a>
-                </div>
-                <div class = "imgBox" data-sal="slide-left" data-sal-duration="500">
-                    <img src = "images/MusicBot.gif">
-                </div>
-            </section>
-
-            <!-- Clients Section-->
-            <section class = "client" id = "client">
-                <h2 class = "heading" data-sal="slide-right" data-sal-duration="500"> Social Media </h2>
-                <p class = "text" data-sal="slide-left" data-sal-duration="500"> Below are all of my social media platforms!</p>
-                <div class = "imgBox">
-                    <a href = "#"> <img src = "images/linkedin.png"> </a>
-                </div>
-                <div class = "imgBox">
-                <a href = "https://github.com/beaverseven/"> <img src = "images/github.png"> </a>
-                </div>
-            </section>
-
-            
-
-            <!-- Testimonial -->
-            <!--
-            <section class = "testimonial" id = "testimonial">
-                <h2 class = "heading"> What our Clients Say</h2>
-                <div class = "container"> 
-                    <div class = "contentBox" data-sal="slide-right" data-sal-duration="500">
+            <section class="services" id="services">
+                <h2 class="heading" data-sal="slide-right" data-sal-duration="500">Technical Skills</h2>
+                <p class="text" data-sal="slide-left" data-sal-duration="500">Tools I use to build research databases, public-facing resources, and data-driven policy projects.</p>
+                <div class="container">
+                    <div class="serviceBox" data-sal="slide-right" data-sal-duration="500">
                         <div>
-                            <p class> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure esse tempore eos consequatur sapiente rerum mollitia quisquam dignissimos vel alias temporibus, nesciunt debitis. Fugit, modi fugiat. Labore consectetur maiores eos!
-
-                            </p> <br>
-                            <h3> Someone Famous</h3>
+                            <img src="images/skill-python.jpg" alt="Python logo">
+                            <h2>Python</h2>
                         </div>
                     </div>
-                    <div class = "contentBox" data-sal="slide-left" data-sal-duration="500">
+                    <div class="serviceBox" data-sal="slide-up" data-sal-duration="500">
                         <div>
-                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure esse tempore eos consequatur sapiente rerum mollitia quisquam dignissimos vel alias temporibus, nesciunt debitis. Fugit, modi fugiat. Labore consectetur maiores eos!
-
-                            </p> <br>
-                            <h3> Someone Famous</h3>
+                            <img src="images/skill-supabase.jpg" alt="Supabase logo">
+                            <h2>Supabase</h2>
                         </div>
                     </div>
-                </div>
-            </section>
-            -->
-
-            <!-- Teams-->
-            <section class = "team" id = "team">
-                <h2 class ="heading" data-sal="slide-left" data-sal-duration="500"> Experience</h2>
-                <p class = "text" data-sal="slide-right" data-sal-duration="500"> Below displays my experience!</p> 
-                <div class = "container">
-                    <div class = "teamBox">
-                        <div class = "box">
-                            <div class = "imgBox">
-                                <img src = "images/BCA.png">
-                            </div>
-                            <div class = "content">
-                                <h2> Brooklyn Chinese American Association <br> <span> Assistant Counselor (June 2018 - August 2018) </span></h2>
-                            </div>
+                    <div class="serviceBox" data-sal="slide-left" data-sal-duration="500">
+                        <div>
+                            <img src="images/skill-sqlite.jpg" alt="SQLite logo">
+                            <h2>SQLite</h2>
                         </div>
                     </div>
-                    <div class = "teamBox">
-                        <div class = "box">
-                            <div class = "imgBox">
-                                <img src = "images/heartshare.png">
-                            </div>
-                            <div class = "content">
-                                <h2> Heartshare St.Vincents Services <br> <span> Activity Specialist (2019-Present)</span></h2>
-                            </div>
+                    <div class="serviceBox" data-sal="slide-right" data-sal-duration="500">
+                        <div>
+                            <img src="images/skill-streamlit.png" alt="Streamlit logo">
+                            <h2>Streamlit</h2>
                         </div>
                     </div>
-                    <div class = "teamBox">
-                        <div class = "box">
-                            <div class = "imgBox">
-                                <img src = "images/shell.png">
-                            </div>
-                            <div class = "content">
-                                <h2> Shellhacks 2022<br> <span> Front-end (September 9-11, 2022)</span></h2>
-                            </div>
+                    <div class="serviceBox" data-sal="slide-up" data-sal-duration="500">
+                        <div>
+                            <img src="images/skill-java.png" alt="Java logo">
+                            <h2>Java</h2>
+                        </div>
+                    </div>
+                    <div class="serviceBox" data-sal="slide-left" data-sal-duration="500">
+                        <div>
+                            <img src="images/skill-react.png" alt="React logo">
+                            <h2>React</h2>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Contact-->
+            <section class="technology" id="projects">
+                <div class="contentBox" data-sal="slide-right" data-sal-duration="500">
+                    <h2 class="heading">AI Policy Case Database</h2>
+                    <p class="text">Built a Python, SQLite, and Streamlit AI policy database for 100+ records on cases, laws, enforcement actions, compliance issues, and source metadata. The project turns scattered legal and regulatory developments into searchable structured data for clearer policy analysis.</p>
+                    <div class="projectLinks">
+                        <a href="ai_policy_database.html">Open embedded database</a>
+                        <a href="https://github.com/jnicelee/AI-Policy-Case-Database">View project</a>
+                    </div>
+                </div>
+                <div class="imgBox projectPanel" data-sal="slide-left" data-sal-duration="500">
+                    <iframe class="databaseEmbed" src="ai_policy_database.html" title="Embedded AI Policy Case Database"></iframe>
+                </div>
+            </section>
 
-            <section class = "contact" id = "contact">
+            <section class="technology altTechnology">
+                <div class="contentBox" data-sal="slide-right" data-sal-duration="500">
+                    <h2 class="heading">BUDS Website</h2>
+                    <p class="text">Built BUDS' first official website for a 100+ member club using React, JavaScript, Supabase, and CSS. The site preserves club history, supports recruitment, and creates public-facing resources plus private role-based hubs for members, e-board, and admins.</p>
+                    <div class="projectLinks">
+                        <a href="https://budebatesociety.com">Visit BUDS website</a>
+                        <a href="https://github.com/jnicelee/budsite">View project</a>
+                    </div>
+                </div>
+                <div class="imgBox projectPanel" data-sal="slide-left" data-sal-duration="500">
+                    <div class="siteMockup">
+                        <strong>BUDS</strong>
+                        <span></span>
+                        <span></span>
+                        <span class="short"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services policySkills" id="policy-skills">
+                <h2 class="heading" data-sal="slide-right" data-sal-duration="500">Policy, Research, and Communication Skills</h2>
+                <p class="text" data-sal="slide-left" data-sal-duration="500">Additional strengths from debate, legal-policy research, and technical documentation.</p>
+                <div class="container">
+                    <div class="serviceBox textSkill" data-sal="slide-right" data-sal-duration="500">
+                        <div>
+                            <h2>Legal Research</h2>
+                            <p>Tracking cases, laws, enforcement actions, and compliance issues across AI policy developments.</p>
+                        </div>
+                    </div>
+                    <div class="serviceBox textSkill" data-sal="slide-up" data-sal-duration="500">
+                        <div>
+                            <h2>Policy Analysis</h2>
+                            <p>Translating technical AI issues into clear legal and regulatory arguments.</p>
+                        </div>
+                    </div>
+                    <div class="serviceBox textSkill" data-sal="slide-left" data-sal-duration="500">
+                        <div>
+                            <h2>Data Organization</h2>
+                            <p>Structuring complex source material into searchable, usable, review-ready records.</p>
+                        </div>
+                    </div>
+                    <div class="serviceBox textSkill" data-sal="slide-right" data-sal-duration="500">
+                        <div>
+                            <h2>Argumentation</h2>
+                            <p>Building, weighing, and presenting arguments through APDA debate experience.</p>
+                        </div>
+                    </div>
+                    <div class="serviceBox textSkill" data-sal="slide-up" data-sal-duration="500">
+                        <div>
+                            <h2>Public Speaking</h2>
+                            <p>Communicating complex ideas clearly in competitive, time-constrained settings.</p>
+                        </div>
+                    </div>
+                    <div class="serviceBox textSkill" data-sal="slide-left" data-sal-duration="500">
+                        <div>
+                            <h2>Technical Writing</h2>
+                            <p>Documenting systems, research workflows, and policy-facing project decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team" id="leadership">
+                <h2 class="heading" data-sal="slide-left" data-sal-duration="500">Leadership and Experience</h2>
+                <p class="text" data-sal="slide-right" data-sal-duration="500">Debate leadership and research work that support my AI policy and pre-law goals.</p>
+                <div class="container">
+                    <div class="teamBox">
+                        <div class="box">
+                            <div class="content">
+                                <h2>BUDS Debate<br><span>Vice President and varsity competitor for Boston University's 4th-ranked APDA debate club.</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamBox">
+                        <div class="box">
+                            <div class="content">
+                                <h2>AI Policy Research<br><span>Building searchable records of AI litigation, regulation, enforcement, and compliance developments.</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamBox">
+                        <div class="box">
+                            <div class="content">
+                                <h2>Technical Portfolio<br><span>Developing public-facing tools and structured resources with Python, SQL, React, and Supabase.</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
                 <div>
-                    <h2 class = "heading" data-sal="slide-left" data-sal-duration="500"> Contact Us</h2>
-                    <p class = "text" data-sal="slide-right" data-sal-duration="500"> If you have any questions or inquiries, feel free to send me a message!</p>
-                
-                </div>
-            </section>
-
-            <section class = "about">
-                <div class = "contentBox redBg">
-                    <div class = "form" data-sal="slide-right" data-sal-duration="500">
-                        <div class = "inputBox">
-                            <input type ="text" name = "" placeholder="Full Name">
-                        </div>
-                        <div class = "inputBox">
-                            <input type ="text" name = "" placeholder="Email Address">
-                        </div>
-                        <div class = "inputBox">
-                            <input type ="text" name = "" placeholder="Mobile No.">
-                        </div>
-                        <div class = "inputBox">
-                            <textarea placeholder="Write your message here..."></textarea>
-                        </div>
-                        <div class = "inputBox">
-                            <input type = "submit" value = "Send" name = "">
-                        </div>
+                    <h2 class="heading" data-sal="slide-left" data-sal-duration="500">Contact</h2>
+                    <p class="text" data-sal="slide-right" data-sal-duration="500">I'm open to AI policy, law-related, research, and technical project opportunities.</p>
+                    <div class="contactLinks" data-sal="slide-up" data-sal-duration="500">
+                        <a href="mailto:2006yeon1@gmail.com">2006yeon1@gmail.com</a>
+                        <a href="https://github.com/jnicelee">github.com/jnicelee</a>
                     </div>
-                
-                </div>
-
-                <div class = "imgBox2">
-
                 </div>
             </section>
 
-            <!-- Footer -->
-            <section class = "footer"> 
-                <p class = "text"> Design & Developed By Janice Lee </p>
+            <section class="footer">
+                <p class="text">Designed and developed by Janice Lee</p>
                 <ul>
-                    <p class = "text"> Follow us on : </p>
-                    <li> <a href = "#"><img src = "images/facebook.png"></a></li>
-                    <li> <a href = "#"><img src = "images/twitter.png"></a></li>
-                    <li> <a href = "#"><img src = "images/linkedin.png"></a></li>
+                    <li><a href="https://github.com/jnicelee"><img src="images/github.png" alt="GitHub"></a></li>
+                    <li><a href="mailto:2006yeon1@gmail.com"><img src="images/linkedin.png" alt="Email"></a></li>
                 </ul>
             </section>
-
-
-
         </div>
 
-        <script type = "text/javascript" src = "sal.js"></script>
-
-        
-
-        <script type = "text/javascript">
-
+        <script type="text/javascript" src="sal.js"></script>
+        <script type="text/javascript">
             sal({
                 once: false,
-              });
+            });
 
             function toggleClassName(){
                 var wrapper = document.querySelector('.wrapper');
@@ -342,9 +237,7 @@
             window.addEventListener('scroll', function(){
                 var header = document.querySelector('header');
                 header.classList.toggle("sticky", window.scrollY > 0);
-
             })
         </script>
-
     </body>
 </html>

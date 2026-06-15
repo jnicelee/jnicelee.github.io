@@ -707,3 +707,230 @@ header .toggle.active{
 
 
 }
+
+/* Janice Lee portfolio content overrides */
+.about
+{
+    min-height: 800px;
+    height: auto;
+}
+
+.about .contentBox
+{
+    align-content: center;
+    display: grid;
+}
+
+.profilePanel
+{
+    align-items: center;
+    background: linear-gradient(135deg, #415a77, #0d1b2a);
+    color: #e0e1dd;
+    display: grid;
+    justify-content: center;
+    padding: 80px;
+}
+
+.profilePanel div
+{
+    width: min(100%, 460px);
+}
+
+.profilePanel h3
+{
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.profilePanel p
+{
+    background: rgba(224, 225, 221, 0.12);
+    border-left: 4px solid #e0e1dd;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    padding: 16px 18px;
+}
+
+.projectLinks
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.projectLinks a,
+.contactLinks a
+{
+    border: 2px solid #e0e1dd;
+    color: #e0e1dd;
+    display: inline-block;
+    font-weight: 700;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+
+.projectLinks a:hover,
+.contactLinks a:hover
+{
+    background: #e0e1dd;
+    color: #0d1b2a;
+}
+
+.projectPanel
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: min(52%, 760px);
+}
+
+.databaseEmbed
+{
+    background: #e0e1dd;
+    border: 0;
+    box-shadow: 0 22px 70px rgba(13, 27, 42, 0.35);
+    height: 560px;
+    width: min(100%, 760px);
+}
+
+.siteMockup
+{
+    background: #e0e1dd;
+    box-shadow: 0 22px 70px rgba(13, 27, 42, 0.35);
+    color: #0d1b2a;
+    padding: 48px;
+    width: min(100%, 520px);
+}
+
+.siteMockup strong
+{
+    display: block;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: clamp(52px, 8vw, 88px);
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.siteMockup span
+{
+    background: #778da9;
+    display: block;
+    height: 14px;
+    margin: 12px 0;
+    width: 82%;
+}
+
+.siteMockup .short
+{
+    width: 46%;
+}
+
+.altTechnology
+{
+    background: #415a77;
+}
+
+.policySkills
+{
+    background: #0d1b2a;
+}
+
+.textSkill
+{
+    height: 300px;
+}
+
+.textSkill h2
+{
+    margin-bottom: 14px;
+}
+
+.textSkill p
+{
+    color: #0d1b2a;
+    font-size: 16px;
+    line-height: 1.55;
+    padding: 0 28px;
+}
+
+.team
+{
+    background: #1b263b;
+    padding: 100px;
+}
+
+.team .teamBox .box
+{
+    min-height: 220px;
+}
+
+.team .teamBox .box .content
+{
+    align-content: center;
+    display: grid;
+    min-height: 220px;
+    padding: 28px;
+}
+
+.team .teamBox .box .content h2
+{
+    color: #0d1b2a;
+}
+
+.team .teamBox .box .content h2 span
+{
+    display: block;
+    line-height: 1.45;
+    margin-top: 12px;
+}
+
+.contactLinks
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+@media (max-width: 991px)
+{
+    .projectPanel
+    {
+        width: 100%;
+    }
+
+    .databaseEmbed
+    {
+        height: 520px;
+    }
+
+    .profilePanel
+    {
+        padding: 50px;
+    }
+
+    .projectLinks,
+    .contactLinks
+    {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px)
+{
+    .databaseEmbed
+    {
+        height: 460px;
+    }
+
+    .projectLinks a,
+    .contactLinks a
+    {
+        text-align: center;
+        width: 100%;
+    }
+}
