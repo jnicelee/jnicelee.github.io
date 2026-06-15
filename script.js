@@ -1,45 +1,33 @@
+const wrapper = document.querySelector(".wrapper");
+const sidebar = document.querySelector(".sidebar");
+const toggle = document.querySelector(".toggle");
 const year = document.querySelector("[data-year]");
-const header = document.querySelector("[data-header]");
-const wrapper = document.querySelector("[data-wrapper]");
-const sidebar = document.querySelector("[data-sidebar]");
-const toggle = document.querySelector("[data-toggle]");
-const navLinks = document.querySelectorAll(".sidebar a");
 
 if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-const setMenuOpen = (isOpen) => {
-  wrapper?.classList.toggle("is-open", isOpen);
-  sidebar?.classList.toggle("is-open", isOpen);
-  toggle?.classList.toggle("is-open", isOpen);
-  toggle?.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
-};
-
-const syncHeader = () => {
-  header?.classList.toggle("is-scrolled", window.scrollY > 12);
-};
-
-toggle?.addEventListener("click", () => {
-  setMenuOpen(!sidebar?.classList.contains("is-open"));
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => setMenuOpen(false));
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    setMenuOpen(false);
-  }
-});
-
-syncHeader();
-window.addEventListener("scroll", syncHeader, { passive: true });
-
-if (window.sal) {
-  window.sal({
-    once: false,
-    threshold: 0.25,
-  });
+function toggleClassName() {
+  sidebar.classList.toggle("active");
+  wrapper.classList.toggle("active");
+  toggle.classList.toggle("active");
+  toggle.setAttribute(
+    "aria-label",
+    sidebar.classList.contains("active") ? "Close navigation" : "Open navigation"
+  );
 }
+
+toggle.addEventListener("click", toggleClassName);
+
+document.querySelectorAll(".sidebar a").forEach((link) => {
+  link.addEventListener("click", toggleClassName);
+});
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+sal({
+  once: false,
+});

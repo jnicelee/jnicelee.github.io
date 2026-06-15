@@ -14,7 +14,8 @@ the bio, project cards, and links.
 ## Files
 
 - `index.html`: page content
-- `styles.css`: visual design
+- `styles.css`: copied from `beaverseven/Portfolio` with permission, with a
+  small compatibility override block at the end for this portfolio's content
 - `script.js`: current year and sticky header behavior
 - `assets/hero-workspace.png`: generated hero image
 - `sal.css` / `sal.js`: scroll reveal animation files pulled from

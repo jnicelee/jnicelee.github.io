@@ -11,63 +11,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="sal.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="wrapper" data-wrapper>
-      <header class="site-header" data-header>
-        <button class="menu-toggle" type="button" data-toggle aria-label="Open navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    <div class="wrapper">
+      <header>
+        <button class="toggle" type="button" aria-label="Open navigation"></button>
       </header>
 
-      <aside class="sidebar" data-sidebar aria-label="Portfolio navigation">
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
+      <aside class="sidebar" aria-label="Portfolio navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </aside>
 
       <main>
-        <section class="banner panel" id="home" aria-labelledby="hero-title">
-          <img
-            class="banner-media"
-            src="assets/hero-workspace.png"
-            alt="A polished desk setup with a laptop and notebook for research and creative work."
-          />
-          <div class="banner-shade"></div>
-          <div class="banner-content" data-sal="slide-left" data-sal-duration="650">
-            <p class="eyebrow">Portfolio</p>
-            <h1 id="hero-title">Janice Lee</h1>
+        <section class="banner" id="home">
+          <img src="assets/hero-workspace.png" alt="A polished desk setup with a laptop and notebook." />
+          <div class="content" data-sal="slide-left" data-sal-duration="500">
+            <p class="kicker">Portfolio</p>
+            <h1>Janice Lee</h1>
             <p>
               Student developer and researcher building practical tools for club
               operations, public-facing resources, and policy data workflows.
             </p>
-            <a class="button" href="#projects">See my projects</a>
+            <a class="btn" href="#projects">View Projects</a>
           </div>
         </section>
 
-        <section class="about panel" id="about" aria-labelledby="about-title">
-          <div class="content-box" data-sal="slide-right" data-sal-duration="650">
-            <p class="eyebrow">About Me</p>
-            <h2 id="about-title">I build organized systems for messy information.</h2>
-            <p>
+        <section class="about" id="about">
+          <div class="contentBox" data-sal="slide-right" data-sal-duration="500">
+            <h2 class="heading">About Me</h2>
+            <p class="text">
               My work sits between software, research, and communication. I like
               projects that make information easier to find, verify, and use, whether
               that means a public website for a student organization or a structured
               database for AI policy research.
             </p>
           </div>
-          <div class="focus-box" data-sal="slide-left" data-sal-duration="650">
+          <div class="imgBox focusBox" data-sal="slide-left" data-sal-duration="500">
             <p>Web development</p>
             <p>Research databases</p>
             <p>Debate and public speaking</p>
@@ -75,97 +65,81 @@
           </div>
         </section>
 
-        <section class="skills panel" id="skills" aria-labelledby="skills-title">
-          <div class="section-title" data-sal="slide-up" data-sal-duration="650">
-            <p class="eyebrow">Skills</p>
-            <h2 id="skills-title">Technologies and strengths</h2>
-          </div>
-          <div class="skill-grid">
-            <article data-sal="slide-right" data-sal-duration="650">
-              <span>React</span>
-              <p>Interactive frontends and reusable page patterns.</p>
-            </article>
-            <article data-sal="slide-up" data-sal-duration="650">
-              <span>JavaScript</span>
-              <p>Client-side behavior, forms, data flow, and UI polish.</p>
-            </article>
-            <article data-sal="slide-left" data-sal-duration="650">
-              <span>Supabase</span>
-              <p>Authentication, database-backed content, and private team tools.</p>
-            </article>
-            <article data-sal="slide-right" data-sal-duration="650">
-              <span>Python</span>
-              <p>Data collection, cleaning, and research workflow automation.</p>
-            </article>
-            <article data-sal="slide-up" data-sal-duration="650">
-              <span>SQLite</span>
-              <p>Structured records, searchable datasets, and lightweight storage.</p>
-            </article>
-            <article data-sal="slide-left" data-sal-duration="650">
-              <span>Streamlit</span>
-              <p>Fast research dashboards and database interfaces.</p>
-            </article>
+        <section class="services" id="services">
+          <h2 class="heading" data-sal="slide-right" data-sal-duration="500">Skills</h2>
+          <p class="text" data-sal="slide-left" data-sal-duration="500">
+            Technologies and strengths I use across my projects.
+          </p>
+          <div class="container">
+            <div class="serviceBox" data-sal="slide-right" data-sal-duration="500">
+              <div><h3>React</h3><p>Interactive frontends and reusable page patterns.</p></div>
+            </div>
+            <div class="serviceBox" data-sal="slide-up" data-sal-duration="500">
+              <div><h3>JavaScript</h3><p>Client-side behavior, forms, data flow, and UI polish.</p></div>
+            </div>
+            <div class="serviceBox" data-sal="slide-left" data-sal-duration="500">
+              <div><h3>Supabase</h3><p>Authentication, database-backed content, and private team tools.</p></div>
+            </div>
+            <div class="serviceBox" data-sal="slide-right" data-sal-duration="500">
+              <div><h3>Python</h3><p>Data collection, cleaning, and research workflow automation.</p></div>
+            </div>
+            <div class="serviceBox" data-sal="slide-up" data-sal-duration="500">
+              <div><h3>SQLite</h3><p>Structured records, searchable datasets, and lightweight storage.</p></div>
+            </div>
+            <div class="serviceBox" data-sal="slide-left" data-sal-duration="500">
+              <div><h3>Streamlit</h3><p>Fast research dashboards and database interfaces.</p></div>
+            </div>
           </div>
         </section>
 
-        <section class="projects" id="projects" aria-labelledby="projects-title">
-          <div class="section-title" data-sal="slide-up" data-sal-duration="650">
-            <p class="eyebrow">Projects</p>
-            <h2 id="projects-title">Selected work</h2>
+        <section class="technology" id="projects">
+          <div class="contentBox" data-sal="slide-right" data-sal-duration="500">
+            <h2 class="heading">BUDS Website</h2>
+            <p class="text">
+              Built the first official website for a 100+ member club using React,
+              JavaScript, Supabase, and CSS. The site organizes public-facing
+              resources, club history, recruitment information, and role-based private
+              hubs for members, e-board, and admins.
+            </p>
+            <a href="https://github.com/jnicelee/budsite">Visit the project here!</a>
           </div>
-
-          <article class="project-panel" data-sal="slide-right" data-sal-duration="650">
-            <div class="project-copy">
-              <p class="project-type">React | JavaScript | Supabase | CSS</p>
-              <h3>BUDS Website</h3>
-              <p>
-                Built the first official website for a 100+ member club, creating
-                public-facing resources, club history, recruitment information, and
-                role-based private hubs for members, e-board, and admins.
-              </p>
-              <a href="https://github.com/jnicelee/budsite">View project</a>
+          <div class="imgBox projectMockup" data-sal="slide-left" data-sal-duration="500">
+            <div class="browserFrame">
+              <div class="browserDots"><span></span><span></span><span></span></div>
+              <strong>BUDS</strong>
+              <span></span>
+              <span></span>
+              <span class="short"></span>
             </div>
-            <div class="project-visual project-visual-buds" aria-label="BUDS website preview">
-              <div class="browser-bar"><span></span><span></span><span></span></div>
-              <div class="preview-lines">
-                <strong>BUDS</strong>
-                <span></span>
-                <span></span>
-                <span class="short"></span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-panel reverse" data-sal="slide-left" data-sal-duration="650">
-            <div class="project-copy">
-              <p class="project-type">Python | SQLite | Streamlit</p>
-              <h3>AI Policy Case Database</h3>
-              <p>
-                Built a research database for 100+ AI policy records covering cases,
-                laws, enforcement, and source metadata, with a streamlined interface
-                for reviewing and organizing policy information.
-              </p>
-              <a href="https://github.com/jnicelee/AI-Policy-Case-Database">View project</a>
-            </div>
-            <div class="project-visual project-visual-policy" aria-label="AI policy database preview">
-              <div class="table-card">
-                <span>case_id</span>
-                <span>jurisdiction</span>
-                <span>topic</span>
-                <span>status</span>
-                <span>source</span>
-                <span>notes</span>
-              </div>
-            </div>
-          </article>
+          </div>
         </section>
 
-        <section class="contact panel" id="contact" aria-labelledby="contact-title">
-          <div data-sal="slide-up" data-sal-duration="650">
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Get in touch</h2>
-            <p>I am open to project, research, and collaboration opportunities.</p>
-            <div class="contact-links">
+        <section class="technology altTechnology">
+          <div class="contentBox" data-sal="slide-right" data-sal-duration="500">
+            <h2 class="heading">AI Policy Case Database</h2>
+            <p class="text">
+              Built a Python, SQLite, and Streamlit research database for 100+ AI
+              policy records covering cases, laws, enforcement, and source metadata.
+            </p>
+            <a href="https://github.com/jnicelee/AI-Policy-Case-Database">Visit the project here!</a>
+          </div>
+          <div class="imgBox projectMockup" data-sal="slide-left" data-sal-duration="500">
+            <div class="databaseFrame">
+              <span>case_id</span>
+              <span>jurisdiction</span>
+              <span>topic</span>
+              <span>status</span>
+              <span>source</span>
+              <span>notes</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div data-sal="slide-up" data-sal-duration="500">
+            <h2 class="heading">Contact</h2>
+            <p class="text">I am open to project, research, and collaboration opportunities.</p>
+            <div class="contactLinks">
               <a href="mailto:2006yeon1@gmail.com">2006yeon1@gmail.com</a>
               <a href="https://github.com/jnicelee">github.com/jnicelee</a>
             </div>
@@ -173,10 +147,10 @@
         </section>
       </main>
 
-      <footer>
-        <p>Copyright <span data-year></span> Janice Lee</p>
+      <section class="footer">
+        <p class="text">Copyright <span data-year></span> Janice Lee</p>
         <a href="#home">Back to top</a>
-      </footer>
+      </section>
     </div>
 
     <script src="sal.js"></script>
