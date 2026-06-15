@@ -863,17 +863,18 @@ header .toggle.active{
 
 .websiteProject
 {
-    align-items: stretch;
-    flex-direction: column;
-    gap: 32px;
-    padding-bottom: 140px;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 64px;
+    padding-bottom: 120px;
 }
 
 .websiteProject .websiteIntro
 {
-    max-width: 1020px;
+    flex: 1 1 42%;
+    max-width: 760px;
     padding-top: 0;
-    width: min(100%, 1020px);
+    width: auto;
 }
 
 .websiteProject .projectPanel
@@ -882,10 +883,12 @@ header .toggle.active{
     border: 1px solid rgba(224, 225, 221, 0.28);
     border-radius: 8px;
     box-shadow: 0 22px 70px rgba(13, 27, 42, 0.35);
+    flex: 1 1 58%;
     justify-content: center;
     margin-top: 0;
+    min-width: 0;
     overflow: hidden;
-    width: 100%;
+    width: min(58%, 1040px);
 }
 
 .websiteProject .projectPreviewImage
@@ -894,7 +897,7 @@ header .toggle.active{
     border: 0;
     border-radius: 0;
     box-shadow: none;
-    height: clamp(360px, 42vw, 760px);
+    height: clamp(340px, 30vw, 560px);
     max-width: 100%;
     object-fit: cover;
     object-position: top center;
@@ -1072,8 +1075,18 @@ header .toggle.active{
 
     .websiteProject
     {
+        align-items: stretch;
+        flex-direction: column;
         gap: 24px;
         padding-bottom: 90px;
+    }
+
+    .websiteProject .websiteIntro,
+    .websiteProject .projectPanel
+    {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
     }
 
     .websiteProject .projectPreviewImage
