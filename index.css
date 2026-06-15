@@ -920,6 +920,15 @@ header .toggle.active{
     height: 300px;
 }
 
+.textSkill .tileIcon
+{
+    display: block;
+    height: 58px;
+    margin: 0 auto 18px;
+    max-width: 72px;
+    width: 72px;
+}
+
 .textSkill h2
 {
     margin-bottom: 14px;
