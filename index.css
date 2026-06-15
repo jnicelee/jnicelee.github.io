@@ -847,36 +847,17 @@ header .toggle.active{
     width: min(52%, 760px);
 }
 
-.siteMockup
+.projectPreviewImage
 {
     background: #e0e1dd;
+    border: 1px solid rgba(224, 225, 221, 0.28);
+    border-radius: 8px;
     box-shadow: 0 22px 70px rgba(13, 27, 42, 0.35);
-    color: #0d1b2a;
-    padding: 48px;
-    width: min(100%, 520px);
-}
-
-.siteMockup strong
-{
     display: block;
-    font-family: 'Libre Baskerville', Georgia, serif;
-    font-size: clamp(52px, 8vw, 88px);
-    line-height: 1;
-    margin-bottom: 30px;
-}
-
-.siteMockup span
-{
-    background: #778da9;
-    display: block;
-    height: 14px;
-    margin: 12px 0;
-    width: 82%;
-}
-
-.siteMockup .short
-{
-    width: 46%;
+    height: auto;
+    max-width: 100%;
+    padding-right: 0;
+    width: min(100%, 780px);
 }
 
 .altTechnology
