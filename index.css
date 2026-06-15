@@ -879,6 +879,37 @@ header .toggle.active{
     width: min(54%, 920px);
 }
 
+.websiteProject
+{
+    align-items: stretch;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 140px;
+}
+
+.websiteProject .websiteIntro
+{
+    max-width: 1020px;
+    padding-top: 0;
+    width: min(100%, 1020px);
+}
+
+.websiteProject .projectPanel
+{
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+.websiteProject .projectPreviewImage
+{
+    height: clamp(360px, 42vw, 760px);
+    max-width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+}
+
 .policySkills
 {
     background: #0d1b2a;
@@ -975,6 +1006,17 @@ header .toggle.active{
     {
         justify-content: center;
         width: 100%;
+    }
+
+    .websiteProject
+    {
+        gap: 24px;
+        padding-bottom: 90px;
+    }
+
+    .websiteProject .projectPreviewImage
+    {
+        height: auto;
     }
 
     .databaseProject
