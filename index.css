@@ -472,24 +472,6 @@ header .toggle.active{
 
 }
 
-.about .imgBox2
-{
-    position: relative;
-    width: 50%;
-    background-image: url(images/bg2.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.redBg
-{
-    background-image: url(images/red.jpg) !important;
-    background-size: cover;
-    background-position: center;
-
-}
-
 .form
 {
     position: relative;
