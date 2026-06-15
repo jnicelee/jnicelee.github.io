@@ -845,7 +845,7 @@ header .toggle.active{
     align-items: center;
     display: flex;
     justify-content: center;
-    width: min(52%, 760px);
+    width: min(52%, 860px);
 }
 
 .projectPreviewImage
@@ -858,12 +858,25 @@ header .toggle.active{
     height: auto;
     max-width: 100%;
     padding-right: 0;
-    width: min(100%, 780px);
+    width: min(100%, 900px);
 }
 
 .altTechnology
 {
+    align-items: flex-start;
     background: #415a77;
+    gap: 60px;
+}
+
+.altTechnology .contentBox
+{
+    padding-top: 12px;
+}
+
+.altTechnology .projectPanel
+{
+    justify-content: flex-end;
+    width: min(54%, 920px);
 }
 
 .policySkills
@@ -945,6 +958,22 @@ header .toggle.active{
 
     .projectPanel
     {
+        width: 100%;
+    }
+
+    .altTechnology
+    {
+        gap: 32px;
+    }
+
+    .altTechnology .contentBox
+    {
+        padding-top: 0;
+    }
+
+    .altTechnology .projectPanel
+    {
+        justify-content: center;
         width: 100%;
     }
 
