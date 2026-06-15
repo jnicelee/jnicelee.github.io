@@ -898,10 +898,10 @@ header .toggle.active{
     border-radius: 0;
     box-shadow: none;
     height: clamp(340px, 30vw, 560px);
-    max-width: 100%;
+    max-width: none;
     object-fit: cover;
-    object-position: top center;
-    width: 100%;
+    object-position: top left;
+    width: 112%;
 }
 
 .policySkills
@@ -1092,6 +1092,7 @@ header .toggle.active{
     .websiteProject .projectPreviewImage
     {
         height: auto;
+        width: 100%;
     }
 
     .databaseProject
