@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal website for Janice Lee: projects, experience, writing, and contact links."
+    />
+    <title>Janice Lee | Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Janice Lee home">JL</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-media"
+          src="assets/hero-workspace.png"
+          alt="A polished desk setup with a laptop and notebook for research and creative work."
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Student • Builder • Communicator</p>
+          <h1 id="hero-title">Janice Lee</h1>
+          <p class="hero-copy">
+            I build thoughtful digital projects, turn messy ideas into sharp systems,
+            and bring a research-driven voice to technical and creative work.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#work">View work</a>
+            <a class="button secondary" href="mailto:jlee40@stuy.edu">Email me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" aria-labelledby="intro-title">
+        <div>
+          <p class="section-kicker">Focus</p>
+          <h2 id="intro-title">Clear thinking, clean execution, and a little momentum.</h2>
+        </div>
+        <p>
+          This site is a home base for projects, writing, academic work, and the
+          experiments that do not fit neatly into one box. Replace this paragraph
+          with a tighter bio once your latest resume details are ready.
+        </p>
+      </section>
+
+      <section class="section stats" aria-label="Highlights">
+        <article>
+          <span>01</span>
+          <h3>Projects</h3>
+          <p>Web apps, research tools, data projects, and small utilities built to solve real problems.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Communication</h3>
+          <p>Writing, debate, presentations, and case-building with a bias toward precise language.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Learning</h3>
+          <p>Computer science, design, policy, and the connective tissue between them.</p>
+        </article>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-kicker">Selected Work</p>
+          <h2 id="work-title">Projects to customize next</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-type">Web App</p>
+            <h3>Campus Club Platform</h3>
+            <p>
+              A membership and operations site for organizing people, events, resources,
+              and private team workflows.
+            </p>
+            <a href="#" aria-label="Open Campus Club Platform project">Add link</a>
+          </article>
+          <article class="project-card">
+            <p class="project-type">Data</p>
+            <h3>Research Tracker</h3>
+            <p>
+              A structured workspace for collecting sources, tagging evidence, and turning
+              notes into clearer arguments.
+            </p>
+            <a href="#" aria-label="Open Research Tracker project">Add link</a>
+          </article>
+          <article class="project-card">
+            <p class="project-type">Writing</p>
+            <h3>Public Notes</h3>
+            <p>
+              Short essays and explainers on technology, school, debate, and the systems
+              that shape everyday decisions.
+            </p>
+            <a href="#" aria-label="Open Public Notes project">Add link</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="about-copy">
+          <p class="section-kicker">About</p>
+          <h2 id="about-title">I like work that rewards curiosity.</h2>
+          <p>
+            I am interested in software, research, and communication: the kind of work
+            where technical skill matters, but judgment matters just as much. This page
+            is intentionally easy to edit as your portfolio grows.
+          </p>
+        </div>
+        <div class="about-list" aria-label="Current interests">
+          <p>Frontend development</p>
+          <p>Research and evidence systems</p>
+          <p>Debate and public speaking</p>
+          <p>Education technology</p>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">Let’s connect.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:jlee40@stuy.edu">jlee40@stuy.edu</a>
+          <a href="https://github.com/jnicelee">GitHub</a>
+          <a href="#" aria-label="Add LinkedIn profile link">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span data-year></span> Janice Lee. Built for GitHub Pages.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
