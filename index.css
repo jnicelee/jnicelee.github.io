@@ -753,6 +753,23 @@ header .toggle.active{
     padding: 16px 18px;
 }
 
+.headshotPanel
+{
+    background: #1b263b;
+    min-height: 800px;
+    overflow: hidden;
+}
+
+.about .imgBox .headshotPhoto
+{
+    display: block;
+    height: 100%;
+    min-height: 800px;
+    object-fit: cover;
+    object-position: center 18%;
+    width: 100%;
+}
+
 .projectLinks
 {
     display: flex;
@@ -911,6 +928,17 @@ header .toggle.active{
     .profilePanel
     {
         padding: 50px;
+    }
+
+    .headshotPanel
+    {
+        min-height: 560px;
+    }
+
+    .about .imgBox .headshotPhoto
+    {
+        min-height: 560px;
+        object-position: center 12%;
     }
 
     .projectLinks,
