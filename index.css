@@ -69,12 +69,12 @@ header .toggle
     background: url(images/toggle.png);
     background-size: cover;
     cursor: pointer; /*When user is hovering over image */
-
+    
 }
 
 header .toggle.active{
    background: url(images/close.png);
-   background-size: cover;
+   background-size: cover; 
 }
 
 
@@ -88,7 +88,7 @@ header .toggle.active{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 
 }
 
@@ -229,7 +229,7 @@ header .toggle.active{
     text-align: center;
     padding-bottom: 100px;
     padding-top: 100px;
-
+    
 }
 
 .container
@@ -292,7 +292,7 @@ header .toggle.active{
 
 .technology .imgBox{
     position: relative;
-
+    
 }
 
 .technology .imgBox img{
@@ -314,8 +314,8 @@ header .toggle.active{
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-
-
+    
+    
 }
 
 .client .imgBox img
@@ -348,8 +348,8 @@ header .toggle.active{
     align-items: center;
     margin:40px;
     flex-wrap: nowrap;
-
-
+    
+    
 
 }
 
@@ -423,7 +423,7 @@ header .toggle.active{
     left: 0;
     width: 100%;
     height:100%;
-
+    
 
 }
 
@@ -575,7 +575,7 @@ header .toggle.active{
     {
         padding: 20px 50px;
     }
-
+    
     .sidebar ul li a{
         font-size: 24px;
     }
@@ -692,212 +692,4 @@ header .toggle.active{
 
 
 
-}
-
-/* Janice Lee portfolio overrides for the copied beaverseven/Portfolio stylesheet. */
-header {
-    justify-content: flex-end;
-}
-
-.banner .content {
-    padding: 0 24px;
-}
-
-.banner .content h1 {
-    color: #fff;
-    font-size: clamp(54px, 9vw, 108px);
-    line-height: 0.95;
-    margin-bottom: 18px;
-    text-transform: uppercase;
-}
-
-.banner .content .kicker {
-    color: #fff;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 4px;
-    margin-bottom: 14px;
-    text-transform: uppercase;
-}
-
-.btn,
-.technology a,
-.contactLinks a,
-.footer a {
-    border: 2px solid #fff;
-    color: #fff;
-    display: inline-block;
-    font-weight: 700;
-    margin-top: 22px;
-    padding: 12px 18px;
-    text-decoration: none;
-}
-
-.btn:hover,
-.technology a:hover,
-.contactLinks a:hover,
-.footer a:hover {
-    background: #fff;
-    color: #12222d;
-}
-
-.focusBox {
-    align-items: center;
-    background: linear-gradient(135deg, #3f8ffc, #12222d);
-    display: grid;
-    gap: 16px;
-    justify-content: stretch;
-    padding: 100px;
-}
-
-.focusBox p {
-    background: rgba(255, 255, 255, 0.12);
-    border-left: 4px solid #fff;
-    color: #fff;
-    font-weight: 700;
-    margin: 0;
-    padding: 18px 20px;
-}
-
-.container .serviceBox h3 {
-    color: #111;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
-}
-
-.container .serviceBox p {
-    color: #4b5563;
-    font-size: 15px;
-    line-height: 1.55;
-    padding: 0 26px;
-}
-
-.technology {
-    min-height: 720px;
-}
-
-.altTechnology {
-    background: #3475ca;
-}
-
-.projectMockup {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 360px;
-    width: 50%;
-}
-
-.browserFrame,
-.databaseFrame {
-    background: #fff;
-    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
-    color: #12222d;
-    max-width: 520px;
-    padding: 42px;
-    width: 100%;
-}
-
-.browserFrame {
-    position: relative;
-}
-
-.browserDots {
-    background: #dbeafe;
-    display: flex;
-    gap: 8px;
-    left: 0;
-    padding: 12px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.browserDots span {
-    background: #3f8ffc;
-    border-radius: 50%;
-    display: block;
-    height: 10px;
-    width: 10px;
-}
-
-.browserFrame strong {
-    display: block;
-    font-size: clamp(54px, 8vw, 92px);
-    line-height: 1;
-    margin: 26px 0 24px;
-}
-
-.browserFrame > span {
-    background: #94a3b8;
-    display: block;
-    height: 14px;
-    margin: 12px 0;
-    width: 82%;
-}
-
-.browserFrame .short {
-    width: 46%;
-}
-
-.databaseFrame {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.databaseFrame span {
-    background: #e6eef8;
-    color: #27415c;
-    font-weight: 700;
-    min-height: 48px;
-    padding: 14px 16px;
-}
-
-.contactLinks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    justify-content: center;
-    margin-top: 18px;
-}
-
-.footer a {
-    margin-top: 0;
-}
-
-@media (max-width: 991px) {
-    header,
-    header.sticky {
-        justify-content: flex-end;
-    }
-
-    .focusBox,
-    .projectMockup {
-        min-height: 360px;
-        padding: 50px;
-        width: 100%;
-    }
-
-    .technology {
-        min-height: auto;
-    }
-
-    .databaseFrame {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 560px) {
-    .banner .content h1 {
-        font-size: 48px;
-    }
-
-    .contactLinks a,
-    .btn,
-    .technology a {
-        width: 100%;
-    }
 }
