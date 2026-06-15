@@ -879,29 +879,29 @@ header .toggle.active{
 
 .websiteProject .projectPanel
 {
-    background: #fff;
-    border: 1px solid rgba(224, 225, 221, 0.28);
-    border-radius: 8px;
-    box-shadow: 0 22px 70px rgba(13, 27, 42, 0.35);
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
     flex: 1 1 58%;
     justify-content: center;
     margin-top: 0;
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
     width: min(58%, 1040px);
 }
 
 .websiteProject .projectPreviewImage
 {
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    height: clamp(340px, 30vw, 560px);
-    max-width: none;
-    object-fit: cover;
-    object-position: top left;
-    width: 112%;
+    background: #fff;
+    border: 1px solid rgba(224, 225, 221, 0.28);
+    border-radius: 8px;
+    box-shadow: 0 22px 70px rgba(13, 27, 42, 0.35);
+    height: auto;
+    max-width: 100%;
+    object-fit: initial;
+    object-position: initial;
+    width: 100%;
 }
 
 .policySkills
@@ -1092,7 +1092,6 @@ header .toggle.active{
     .websiteProject .projectPreviewImage
     {
         height: auto;
-        width: 100%;
     }
 
     .databaseProject
