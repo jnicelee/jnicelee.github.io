@@ -5,149 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Personal website for Janice Lee: projects, experience, writing, and contact links."
+      content="Personal portfolio for Janice Lee: web development, policy data, research, and contact information."
     />
-    <title>Janice Lee | Personal Website</title>
+    <title>Janice Lee | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Janice Lee home">JL</a>
       <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
         <img
           class="hero-media"
           src="assets/hero-workspace.png"
           alt="A polished desk setup with a laptop and notebook for research and creative work."
         />
-        <div class="hero-overlay"></div>
+        <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow">Student • Builder • Communicator</p>
+          <p class="eyebrow">Portfolio</p>
           <h1 id="hero-title">Janice Lee</h1>
-          <p class="hero-copy">
-            I build thoughtful digital projects, turn messy ideas into sharp systems,
-            and bring a research-driven voice to technical and creative work.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#work">View work</a>
-            <a class="button secondary" href="mailto:jlee40@stuy.edu">Email me</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section intro" aria-labelledby="intro-title">
-        <div>
-          <p class="section-kicker">Focus</p>
-          <h2 id="intro-title">Clear thinking, clean execution, and a little momentum.</h2>
-        </div>
-        <p>
-          This site is a home base for projects, writing, academic work, and the
-          experiments that do not fit neatly into one box. Replace this paragraph
-          with a tighter bio once your latest resume details are ready.
-        </p>
-      </section>
-
-      <section class="section stats" aria-label="Highlights">
-        <article>
-          <span>01</span>
-          <h3>Projects</h3>
-          <p>Web apps, research tools, data projects, and small utilities built to solve real problems.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Communication</h3>
-          <p>Writing, debate, presentations, and case-building with a bias toward precise language.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Learning</h3>
-          <p>Computer science, design, policy, and the connective tissue between them.</p>
-        </article>
-      </section>
-
-      <section class="section work" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="section-kicker">Selected Work</p>
-          <h2 id="work-title">Projects to customize next</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <p class="project-type">Web App</p>
-            <h3>Campus Club Platform</h3>
-            <p>
-              A membership and operations site for organizing people, events, resources,
-              and private team workflows.
-            </p>
-            <a href="#" aria-label="Open Campus Club Platform project">Add link</a>
-          </article>
-          <article class="project-card">
-            <p class="project-type">Data</p>
-            <h3>Research Tracker</h3>
-            <p>
-              A structured workspace for collecting sources, tagging evidence, and turning
-              notes into clearer arguments.
-            </p>
-            <a href="#" aria-label="Open Research Tracker project">Add link</a>
-          </article>
-          <article class="project-card">
-            <p class="project-type">Writing</p>
-            <h3>Public Notes</h3>
-            <p>
-              Short essays and explainers on technology, school, debate, and the systems
-              that shape everyday decisions.
-            </p>
-            <a href="#" aria-label="Open Public Notes project">Add link</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section about" id="about" aria-labelledby="about-title">
-        <div class="about-copy">
-          <p class="section-kicker">About</p>
-          <h2 id="about-title">I like work that rewards curiosity.</h2>
           <p>
-            I am interested in software, research, and communication: the kind of work
-            where technical skill matters, but judgment matters just as much. This page
-            is intentionally easy to edit as your portfolio grows.
+            Student developer and researcher building practical tools for club
+            operations, public-facing resources, and policy data workflows.
           </p>
-        </div>
-        <div class="about-list" aria-label="Current interests">
-          <p>Frontend development</p>
-          <p>Research and evidence systems</p>
-          <p>Debate and public speaking</p>
-          <p>Education technology</p>
+          <a class="button" href="#projects">See my projects</a>
         </div>
       </section>
 
-      <section class="section contact" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">Let’s connect.</h2>
+      <section class="split about-section" id="about" aria-labelledby="about-title">
+        <div class="copy-block">
+          <p class="eyebrow">About Me</p>
+          <h2 id="about-title">I build organized systems for messy information.</h2>
+          <p>
+            My work sits between software, research, and communication. I like
+            projects that make information easier to find, verify, and use, whether
+            that means a public website for a student organization or a structured
+            database for AI policy research.
+          </p>
         </div>
+        <div class="profile-panel" aria-label="Portfolio focus areas">
+          <p>Web development</p>
+          <p>Research databases</p>
+          <p>Debate and public speaking</p>
+          <p>Student organization systems</p>
+        </div>
+      </section>
+
+      <section class="skills" id="skills" aria-labelledby="skills-title">
+        <p class="eyebrow">Skills</p>
+        <h2 id="skills-title">Technologies and strengths</h2>
+        <div class="skill-grid">
+          <article>
+            <span>React</span>
+            <p>Interactive frontends and reusable page patterns.</p>
+          </article>
+          <article>
+            <span>JavaScript</span>
+            <p>Client-side behavior, forms, data flow, and UI polish.</p>
+          </article>
+          <article>
+            <span>Supabase</span>
+            <p>Authentication, database-backed content, and private team tools.</p>
+          </article>
+          <article>
+            <span>Python</span>
+            <p>Data collection, cleaning, and research workflow automation.</p>
+          </article>
+          <article>
+            <span>SQLite</span>
+            <p>Structured records, searchable datasets, and lightweight storage.</p>
+          </article>
+          <article>
+            <span>Streamlit</span>
+            <p>Fast research dashboards and database interfaces.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="project-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Selected work</h2>
+        </div>
+
+        <article class="project-row">
+          <div class="project-copy">
+            <p class="project-type">React | JavaScript | Supabase | CSS</p>
+            <h3>BUDS Website</h3>
+            <p>
+              Built the first official website for a 100+ member club, creating
+              public-facing resources, club history, recruitment information, and
+              role-based private hubs for members, e-board, and admins.
+            </p>
+            <a href="https://github.com/jnicelee/budsite">View project</a>
+          </div>
+          <div class="project-visual project-visual-buds" aria-label="BUDS website preview">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="preview-lines">
+              <strong>BUDS</strong>
+              <span></span>
+              <span></span>
+              <span class="short"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row reverse">
+          <div class="project-copy">
+            <p class="project-type">Python | SQLite | Streamlit</p>
+            <h3>AI Policy Case Database</h3>
+            <p>
+              Built a research database for 100+ AI policy records covering cases,
+              laws, enforcement, and source metadata, with a streamlined interface
+              for reviewing and organizing policy information.
+            </p>
+            <a href="https://github.com/jnicelee/AI-Policy-Case-Database">View project</a>
+          </div>
+          <div class="project-visual project-visual-policy" aria-label="AI policy database preview">
+            <div class="table-card">
+              <span>case_id</span>
+              <span>jurisdiction</span>
+              <span>topic</span>
+              <span>status</span>
+              <span>source</span>
+              <span>notes</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Get in touch</h2>
+        <p>
+          I am open to project, research, and collaboration opportunities.
+        </p>
         <div class="contact-links">
-          <a href="mailto:jlee40@stuy.edu">jlee40@stuy.edu</a>
-          <a href="https://github.com/jnicelee">GitHub</a>
-          <a href="#" aria-label="Add LinkedIn profile link">LinkedIn</a>
+          <a href="mailto:2006yeon1@gmail.com">2006yeon1@gmail.com</a>
+          <a href="https://github.com/jnicelee">github.com/jnicelee</a>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>© <span data-year></span> Janice Lee. Built for GitHub Pages.</p>
-      <a href="#top">Back to top</a>
+      <p>Copyright <span data-year></span> Janice Lee</p>
+      <a href="#home">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
