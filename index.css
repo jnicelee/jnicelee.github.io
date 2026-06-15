@@ -904,6 +904,12 @@ header .toggle.active{
     width: 100%;
 }
 
+.technology .websitePreviewShell .projectPreviewImage
+{
+    max-width: 100%;
+    padding-right: 0;
+}
+
 .policySkills
 {
     background: #0d1b2a;
