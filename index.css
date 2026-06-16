@@ -184,7 +184,7 @@ header .toggle.active::after
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 9999;
     transition: 0.5s;
 }
 
