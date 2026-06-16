@@ -12,9 +12,15 @@
 body
 {
     background: #0d1b2a;
-    height: 1000px;
-    overflow-x:hidden;
+    min-height: 100%;
+    overflow-x: hidden;
+}
 
+html,
+body,
+.wrapper
+{
+    max-width: 100%;
 }
 
 .wrapper /*The body of the page*/
@@ -67,15 +73,51 @@ header .toggle
     position: relative;
     width: 36px;
     height: 28px;
-    background: url(images/toggle.png);
-    background-size: cover;
+    background: none;
     cursor: pointer; /*When user is hovering over image */
+    flex: 0 0 auto;
     
 }
 
 header .toggle.active{
-   background: url(images/close.png);
-   background-size: cover; 
+   background: none;
+}
+
+header .toggle::before,
+header .toggle::after
+{
+    background: #e0e1dd;
+    border-radius: 999px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: 0.25s;
+    width: 100%;
+}
+
+header .toggle::before
+{
+    box-shadow: 0 10px 0 #e0e1dd;
+    top: 15%;
+}
+
+header .toggle::after
+{
+    bottom: 15%;
+}
+
+header .toggle.active::before
+{
+   box-shadow: none;
+   top: 50%;
+   transform: translateY(-50%) rotate(45deg);
+}
+
+header .toggle.active::after
+{
+   bottom: 50%;
+   transform: translateY(50%) rotate(-45deg);
 }
 
 
@@ -85,6 +127,7 @@ header .toggle.active{
     position: relative; /*RELATIVE to where the page starts.*/
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 
     display: flex;
     justify-content: center;
@@ -107,7 +150,9 @@ header .toggle.active{
 {
     position: relative;
     max-width: 750px;
+    min-width: 0;
     text-align: center;
+    width: 100%;
 
 }
 
@@ -1084,7 +1129,8 @@ header .toggle.active{
         align-items: stretch;
         flex-direction: column;
         gap: 24px;
-        padding-bottom: 90px;
+        margin-top: 0;
+        padding: 72px 50px 90px;
     }
 
     .websiteProject .websiteIntro,
@@ -1103,7 +1149,8 @@ header .toggle.active{
     .databaseProject
     {
         gap: 24px;
-        padding-bottom: 90px;
+        margin-top: 0;
+        padding: 72px 50px 90px;
     }
 
     .databaseEmbedShell
@@ -1135,20 +1182,235 @@ header .toggle.active{
     {
         justify-content: center;
     }
+
+    .sidebar
+    {
+        right: 0;
+        transform: translateX(100%);
+        width: min(100vw, 380px);
+    }
+
+    .sidebar.active
+    {
+        transform: translateX(0);
+    }
+
+    .sidebar ul
+    {
+        padding: 0 32px;
+        width: 100%;
+    }
+
+    .sidebar ul li a
+    {
+        display: block;
+        line-height: 1.2;
+        padding: 10px 0;
+    }
+
+    [data-sal]
+    {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .wrapper.active
+    {
+        left: 0;
+    }
 }
 
 @media (max-width: 560px)
 {
+    header,
+    header.sticky
+    {
+        padding: 18px 24px;
+    }
+
+    header .logo
+    {
+        font-size: 18px;
+    }
+
+    header .toggle
+    {
+        height: 23px;
+        width: 29px;
+    }
+
+    .sidebar
+    {
+        width: 100vw;
+    }
+
+    .banner
+    {
+        height: auto;
+        min-height: 100svh;
+        padding: 32px 24px;
+    }
+
+    .banner .content h2
+    {
+        font-size: 32px;
+        line-height: 1.16;
+    }
+
+    .banner .content p
+    {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .heading
+    {
+        font-size: 27px;
+        line-height: 1.25;
+    }
+
+    .text
+    {
+        font-size: 15px;
+        line-height: 1.68;
+    }
+
+    .about .contentBox,
+    .services,
+    .technology,
+    .team,
+    .contact
+    {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .about .contentBox
+    {
+        padding-bottom: 42px;
+        padding-top: 56px;
+    }
+
+    .headshotPanel
+    {
+        height: 420px;
+    }
+
+    .services
+    {
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
+
+    .container
+    {
+        margin-top: 32px;
+    }
+
+    .container .serviceBox
+    {
+        height: 240px;
+        margin: 14px 0;
+        width: min(100%, 320px);
+    }
+
+    .container .serviceBox img
+    {
+        max-width: 82px;
+    }
+
+    .databaseProject,
+    .websiteProject
+    {
+        margin-top: 0;
+        padding: 64px 24px 72px;
+    }
+
     .databaseEmbedShell
     {
+        border-radius: 6px;
         height: 68vh;
-        min-height: 500px;
+        min-height: 430px;
     }
 
     .projectLinks a,
     .contactLinks a
     {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 46px;
         text-align: center;
         width: 100%;
+    }
+
+    .projectNote
+    {
+        font-size: 14px;
+    }
+
+    .websiteProject
+    {
+        gap: 28px;
+    }
+
+    .websiteProject .projectPreviewImage
+    {
+        width: 100%;
+    }
+
+    .policySkills .container
+    {
+        gap: 18px;
+        grid-template-columns: minmax(0, 320px);
+        justify-content: center;
+    }
+
+    .policySkills .serviceBox
+    {
+        height: auto;
+        min-height: 250px;
+        padding: 26px 0;
+    }
+
+    .textSkill p
+    {
+        font-size: 15px;
+        padding: 0 22px;
+    }
+
+    .team
+    {
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
+
+    .team .teamBox
+    {
+        width: 100%;
+    }
+
+    .team .teamBox .box
+    {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .team .teamBox .box .content
+    {
+        min-height: 190px;
+        padding: 24px;
+    }
+
+    .contact
+    {
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
+
+    .footer
+    {
+        padding: 24px;
     }
 }
